@@ -9,6 +9,7 @@ $(document).ready(function () {
     $('.next-step-one').click(function(){
       $('.step-two').show();
       $('.step-one').hide();
+      $('header').addClass('bg');
     });
 
     $('.btn-next').click(function(){
@@ -17,7 +18,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".back").click(function(){
+  $(".previous").click(function(){
     $(this).data("id");
   });
 

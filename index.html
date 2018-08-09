@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vendedor Virtual</title>
+        <title>Assistente Virtual</title>
         <meta name="author" content="Agência Advice e-Commerce">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,59 +11,110 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+
     </head>
 
     <body>
         <header>
-            <div class="container">
-                <img src="../vendedor-virtual/img/logo-advice.png">
-            </div>    
+            <div class="logo">
+                <div class="container">
+                    <img src="../vendedor-virtual/img/logo-advice.png">
+                </div>    
+            </div>
         </header>
-        <form>
-            <section class="step-one" data-id="1">
-                <div class="container">                
-                    <h1 class="title">Vendedor virtual</h1>
-                    <h3 class="subtitle">Saiba qual a melhor <b>plataforma</b> do mercado para a sua <b>loja virtual</b></h3>
-                    <img class="img-vendedor" src="../vendedor-virtual/img/vendedor.png" alt="Saiba qual a melhor plataforma do mercado para a sua loja virtual" />
-                    <div class="quero-loja">
-                        <p class="plataformas">A Advice trabalha com as melhores plataformas de e-commerce do mercado (VTEX, xtech e Magento), proporcionamos aos seus clientes uma experiência de compra diferenciada. 
-                        Desenvolvemos lojas personalizadas com alta qualidade e segurança e, dessa forma, geramos vendas em escala para os mais diversos segmentos do mercado.</p>
+        <section class="conteudos">
+            <form>
+                <!-- STEP ONE -->
+                <div class="step-one" data-id="1">
+                    <div class="container">                
+                        <h1 class="title">Assistente virtual</h1>
+                        <h3 class="subtitle">Saiba qual a melhor <b>plataforma</b> do mercado para a sua <b>loja virtual</b></h3>
+                        <img class="img-vendedor" src="../vendedor-virtual/img/vendedor.png" alt="Saiba qual a melhor plataforma do mercado para a sua loja virtual" />
                         <div class="quero-loja">
-                            <button class="btn-quero-loja next-step-one" type="button">Quero minha loja <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>
-                        </div>         
-                    </div>              
+                            <p class="plataformas">A Advice trabalha com as melhores plataformas de e-commerce do mercado (VTEX, xtech e Magento), proporcionamos aos seus clientes uma experiência de compra diferenciada. 
+                            Desenvolvemos lojas personalizadas com alta qualidade e segurança e, dessa forma, geramos vendas em escala para os mais diversos segmentos do mercado.</p>
+                            <div class="quero-loja">
+                                <button class="btn-quero-loja next-step-one" type="button">Quero minha loja <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>
+                            </div>         
+                        </div>              
+                    </div>
                 </div>
-            </section>
-            <section class="step-two animated slideInLeft delay-2s" data-id="2">
-                <div class="container">                
-                    <p class="title">Antes de começar-mos, por favor, nos informe seu <b>e-mail</b> logo abaixo</h1>  
-                    <input id="email" name="email" class="email" placeholder="Informe seu e-mail">     
-                    <i class="fa fa-check" aria-hidden="true" id="success"></i>
-                    <i class="fa fa-times" aria-hidden="true" id="error"></i>
-                    <i class="fa fa-exclamation" aria-hidden="true" id="warning"></i>
-                    <button class="btn-next step-two" type="button">OK, vamos lá! <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>      
-                    <a data-id="2" class="back" href=""><i class="fas fa-arrow-left"></i> Voltar</a>
-                    <span id="span1">Entre com um e-mail válido (ex. john@domain.com)</span>
-                    <span id="span2">Este campo não pode estar vazio</span>
-                </div>   
-            </section>
-            <section class="step-three animated slideInLeft delay-2s" data-id="3">
-                <div class="container">                
-                    <p class="title">Antes de começar-mos, por favor, nos informe seu <b>e-mail</b> logo abaixo</h1>  
-                    <input id="email" name="email" class="email" placeholder="Informe seu e-mail">     
-                    <i class="fa fa-check" aria-hidden="true" id="success"></i>
-                    <i class="fa fa-times" aria-hidden="true" id="error"></i>
-                    <i class="fa fa-exclamation" aria-hidden="true" id="warning"></i>
-                    <button class="btn-next step-three" type="button">OK, vamos lá! <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>      
-                    <a data-id="3" class="back" href="">Voltar</a>
-                    <span id="span1">Entre com um e-mail válido (ex. john@domain.com)</span>
-                    <span id="span2">Este campo não pode estar vazio</span>
-                </div>   
-            </section>
-        </form>
+
+                <!-- STEP TWO -->
+                <div class="step-two animated slideInLeft delay-2s" data-id="2">
+                    <div class="container">                
+                        <p class="title">Antes de começar-mos, por favor, nos informe seu <b>e-mail</b> logo abaixo</h1>  
+                        <input id="email" name="email" class="email" placeholder="Informe seu e-mail">     
+                        <i class="fa fa-check" aria-hidden="true" id="success"></i>
+                        <i class="fa fa-times" aria-hidden="true" id="error"></i>
+                        <i class="fa fa-exclamation" aria-hidden="true" id="warning"></i>
+                        <button class="btn-next step-two" type="button">OK, vamos lá! <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>      
+                        <a class="previous" href=""><i class="fas fa-arrow-left"></i> Voltar</a>
+                        <span id="span1">Entre com um e-mail válido (ex. john@domain.com)</span>
+                        <span id="span2">Este campo não pode estar vazio</span>
+                    </div>   
+                </div>
+
+                <!-- STEP THREE -->
+                <div class="step-three animated slideInLeft delay-2s" data-id="3">
+                    <div class="container">                     
+                        <p class="title">Meus <b>produtos</b> ou <b>serviços</b> são para...</h1>  
+                        <div class="col-md-12">
+							<div class="col-md-4">
+								<div class="radio-item active">
+                                    <label for="b2c">
+                                        <input type="radio" name="Tipo de venda" class="option-input radio" value="B2C" id="b2c" checked="">
+                                        <div id="f1_container">
+                                            <div id="f1_card" class="shadow">
+                                                <div class="front face">
+                                                    <img src="img/b2c-img.png" id="b2c"> 
+                                                    Consumidores
+                                                </div>
+                                                <div class="back face center">
+                                                    <p>Vendo apenas para consumidores e clientes finais</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+								</div>
+							</div>
+							<div class="col-md-4">
+                                <div class="radio-item active">
+                                    <label for="b2b">
+                                        <input type="radio" name="Tipo de venda" class="option-input radio" value="B2B" id="b2b">
+                                        <div id="f1_container">
+                                            <div id="f1_card" class="shadow">
+                                                <div class="front face">
+                                                    <img src="img/b2b-img.png"> 
+                                                    Empresas
+                                                </div>
+                                                <div class="back face center">
+                                                    <p>Vendo apenas para outras empresas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="radio-item">
+									<input type="radio" name="Tipo de venda" class="option-input radio" value="B2B+B2C" id="both">
+									<img src="img/n/both.png">
+									<label for="both">Ambos (B2C + B2B)</label>
+									<p>Vendo tanto para empresas quanto para pessoas</p>
+								</div>
+                            </div>
+						</div>
+                        <button class="btn-next step-three" type="button">Continuar <i class="fa fa-angle-right animated infinite slideInLeft delay-2s"></i></button>      
+                        <a class="previous" href="">Voltar</a>
+                    </div>   
+                </div>
+            </form>
+        </section>
         <footer> 
             <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
             <script src="../vendedor-virtual/js/aplication.js"></script>
         </footer>
     </body>
